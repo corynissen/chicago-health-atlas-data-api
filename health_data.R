@@ -13,7 +13,7 @@ run <- function(zip=NULL, json=TRUE){
   if(tolower(json) %in% c(TRUE, "true", "t")){
     output <- toJSON(data)
   }else{
-    output <- otable(as.data.frame(cbind(names(data),data)))
+    output <- otable(as.data.frame(rbind(names(data),data)))
   }
   as.WebResult(output, cmd="raw")
 }

@@ -6,7 +6,7 @@ run <- function(zip=NULL, json=TRUE){
   download.file(data_url, destfile=dataFile, method="curl")
   data <- read.csv(dataFile, stringsAsFactors=F)
   
-  if(!is.null(zip) & zip %in% data$zipcode){
+  if(exists("zip") & zip %in% data$zipcode){
     data <- subset(data, zipcode==zip)
   }
 

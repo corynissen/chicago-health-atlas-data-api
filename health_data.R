@@ -10,7 +10,7 @@ run <- function(zip=NULL, json=TRUE){
     if(zip %in% data$zipcode){
       data <- subset(data, zipcode==zip)
     }else{
-      data <- data.frame(error="error: zip not found")
+      data <- data.frame("error"="error: zip not found")
     }
   }
 

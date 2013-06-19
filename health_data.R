@@ -15,5 +15,5 @@ run <- function(zipcode=NULL, json=TRUE){
   }else{
     output <- otable(data)
   }
-  as.WebResult(msg, cmd="raw")
+  as.WebResult(output, cmd="raw")
 }

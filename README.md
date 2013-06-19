@@ -7,7 +7,7 @@ Usage:
 
 http://174.129.49.183/cgi-bin/R/health_data returns all data in json format
 
-Use json=F to deliver in tabular format
+Use json=F to deliver in tabular format   
 Use zip=chicago zip code to subset by zip code
 
 Examples:
